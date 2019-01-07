@@ -1,0 +1,55 @@
+# Build settings
+permalink: /blog/:year/:title/
+markdown: kramdown
+highlighter: pygments
+plugins: [jekyll-paginate-v2]
+
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: "/page/:num/"
+  sort_reverse: true
+
+comments: true
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: compressed # expanded
+
+# SEO settings
+title: Aneesh Devasthale
+description: "Aneesh Devasthale"
+keywords: "aneesh,devasthale,developer,engineer,frontend,backend,fullstack,javascript,react,node"
+url: https://aneesh.xyz/
+baseurl: ""
+
+google_analytics: UA-57612266-2
+repo: http://github.com/aneeshd16/aneeshd16.github.io
+disqus_shortname: "aneesh-devasthale"
+disqus_site_shortname: "aneesh-devasthale"
+
+# Author settings
+author:
+  name: Aneesh Devasthale
+  job: Full Stack Engineer
+  bio: "3+ years of full-stack engineering experience, SoC and clean code evangelist, lover of good coffee and scuba diving"
+  thumb: /images/author.jpg
+  email: me@aneesh.xyz
+  url: https://aneesh.xyz/
+  github: https://github.com/aneeshd16
+  instagram: https://www.instagram.com/aneeshd16
+  facebook: https://facebook.com/aneeshdevasthale
+  linkedin: https://linkedin.com/in/aneeshdevasthale
+
+# navbar pages
+navbar:
+  - slug: about
+    title: About
+  - slug: talks
+    title: Talks
+  - slug: blog
+    title: Blog
+
+exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]
