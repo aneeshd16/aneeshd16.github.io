@@ -28,6 +28,11 @@ task :generate do
     "destination" => "_site",
     "config"      => "_config.yml"
   })).process
+  filename = File.join(DEST, "CNAME")
+  open(filename, 'w') do |cname|
+    cname.print "aneesh.xyz"
+  end
+
 end
 
 desc "Generate and publish blog to gh-pages"
@@ -39,13 +44,12 @@ task :publish => [:generate] do
     Dir.chdir tmp
 
     system "git init"
-    system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
-    # system "git checkout #{GITHUB_REPO_BRANCH}"
-    system "git pull origin #{GITHUB_REPO_BRANCH}"
+    system "git checkout --orphan #{GITHUB_REPO_BRANCH}"
     system "git add ."
     message = "Site updated at #{Time.now.utc}"
     system "git commit -am #{message.inspect}"
-    system "git push origin #{GITHUB_REPO_BRANCH}"
+    system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
+    system "git push origin #{GITHUB_REPO_BRANCH} --force"
 
     Dir.chdir pwd
   end
