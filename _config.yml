@@ -1,4 +1,6 @@
 # Build settings
+environment: production
+future: true
 permalink: /blog/:year/:title/
 markdown: kramdown
 highlighter: pygments
@@ -13,33 +15,7 @@ pagination:
   sort_reverse: true
 
 autopages:
-  enabled: true
-  categories: 
-    enabled: true
-    # Optional, the list of layouts that should be processed for every category found in the site
-    layouts: 
-      - 'autopage_category.html'
-    # Optional, the title that each category paginate page should get (:cat is replaced by the Category name)
-    title: 'Posts in category :cat'
-    # Optional, the permalink for the  pagination page (:cat is replaced), 
-    # the pagination permalink path is then appended to this permalink structure
-    permalink: '/category/:cat'
-
-  # Collection pages, omit to disable
-  collections:
-    enabled: false
-    layouts: 
-      - 'autopage_collection.html'
-    title: 'Posts in collection :coll' # :coll is replaced by the collection name
-    permalink: '/collection/:coll'
-  
-  # Tag pages, omit to disable
-  tags:
-    enabled: false
-    layouts: 
-      - 'autopage_tags.html'
-    title: 'Posts tagged with :tag' # :tag is replaced by the tag name
-    permalink: '/tag/:tag'
+  enabled: false
 
 comments: true
 
@@ -53,7 +29,7 @@ sass:
 title: Aneesh Devasthale
 description: "Aneesh Devasthale"
 keywords: "aneesh,devasthale,developer,engineer,frontend,backend,fullstack,javascript,react,node"
-url: https://aneesh.xyz/
+url: https://aneesh.xyz
 baseurl: ""
 
 google_analytics: UA-57612266-2
@@ -65,7 +41,6 @@ disqus_site_shortname: "aneesh-devasthale"
 author:
   name: Aneesh Devasthale
   job: Full Stack Engineer
-  bio: "3+ years of full-stack engineering experience, SoC and clean code evangelist, lover of good coffee and scuba diving"
   thumb: /images/author.jpg
   email: me@aneesh.xyz
   url: https://aneesh.xyz/
