@@ -4,13 +4,23 @@ title: About
 permalink: /about/
 ---
 # Organizations that I have worked with
-<small>2016 - Present</small> <em>Senior Software Engineer (Growth), </em><em>Senior Software Engineer</em>
-<br>[LimeTray](https://limetray.com)
-* Growth - MVPs, POCs, and A/B tests to optimize AARRR (Acquisition, Activation, Retention, Revenue, Referral) metrics.
-* Revamp of OMS (Order Management System), designed for 200 order per second.
+**2016 - Present** <em>Senior Software Engineer (Growth), </em><em>Senior Software Engineer</em>
+<br>
+### [LimeTray](https://limetray.com)
+* Growth - MVP (Minimum Viable Product)s, PoC (Proof of Concept)s, and A/B tests to optimize AARRR (Acquisition, Activation, Retention, Revenue, Referral) metrics.
+* Revamp of OMS (Order Management System), designed for 200 orders per second.
 * Team lead for Point of Sale product. (Team size - 5)
 * Part of team architecturing decomposition of monolith into microservices.
 
+**2015-2016** 
+<br>
+### [Google Summer of Code (FOSSASIA)](https://summerofcode.withgoogle.com/)
+* Frontend development on the loklak webclient.
+
+**2015-2016** <em>Intern</em>
+<br>
+### [Redmart](https://redmart.lazada.sg/)
+* MEAN stack development on the smart DriverBuddy logisitics platform.
 
 # Tech that I have worked on
 * Languages - JavaScript, Java, Golang, Python
