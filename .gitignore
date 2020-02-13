@@ -3,3 +3,4 @@ _site
 bourbon
 vendor
 .bundle
+.DS_Store

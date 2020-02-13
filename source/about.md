@@ -7,7 +7,10 @@ permalink: /about/
 **2016 - Present** <em>Senior Software Engineer (Growth), </em><em>Senior Software Engineer</em>
 <br>
 ### [LimeTray](https://limetray.com)
-* Growth - MVP (Minimum Viable Product)s, PoC (Proof of Concept)s, and A/B tests to optimize AARRR (Acquisition, Activation, Retention, Revenue, Referral) metrics.
+* Integration of a chat support system for all customer facing products with 5000 monthly conversations.
+* Automated NPS (Net Promoter Score) surveys and report generation.
+* Analytics and reporting pipeline using AWS services - DMS, Kinesis data streams and Redshift.
+* Experiments - Churn bot to predict customer churn.
 * Revamp of OMS (Order Management System), designed for 200 orders per second.
 * Team lead for Point of Sale product. (Team size - 5)
 * Part of team architecturing decomposition of monolith into microservices.
@@ -34,5 +37,6 @@ permalink: /about/
 
 
 # Open Source Projects
+* [Node SQS Stream](https://github.com/aneeshd16/node-sqs-stream) - Use Readable and Writable streams for AWS SQS with NodeJS
 * [ThreadJS](https://github.com/aneeshd16/ThreadJS) - JS library for multithreading using web workers
 * [FB-Chatbot](https://github.com/aneeshd16/fb-chatbot) - NodeJS module for creating facebook chatbots
