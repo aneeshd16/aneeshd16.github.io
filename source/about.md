@@ -4,7 +4,12 @@ title: About
 permalink: /about/
 ---
 # Organizations that I have worked with
-**2016 - Present** <em>Senior Software Engineer (Growth), </em><em>Senior Software Engineer</em>
+**2020 - Present** <em>Javascript Engineer</em>
+<br>
+### [Automattic](https://automattic.com)
+* MarTech team
+
+**2016 - 2020** <em>Senior Software Engineer (Growth), </em><em>Senior Software Engineer</em>
 <br>
 ### [LimeTray](https://limetray.com)
 * Integration of a chat support system for all customer facing products with 5000 monthly conversations.
