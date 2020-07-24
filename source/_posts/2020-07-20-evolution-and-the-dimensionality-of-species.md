@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Evolution and the dimensionality of species"
-permalink: evolution-and-the-dimensionality-of-species
 date: 2020-07-20 01:29:14
 comments: true
 description: "Evolution and the dimensionality of species"

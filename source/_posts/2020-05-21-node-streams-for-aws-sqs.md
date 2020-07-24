@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Node streams for AWS SQS"
-permalink: node-streams-for-aws-sqs
 date: 2020-05-21 18:06:24
 comments: true
 description: "Node streams for AWS SQS"
