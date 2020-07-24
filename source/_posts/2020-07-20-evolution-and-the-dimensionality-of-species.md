@@ -10,6 +10,9 @@ categories:
 tags: random
 
 ---
+
+This is the first post of this type that I have written. It's highly opinionated and may not reflect the current accepted understanding of the topic. The objective of this post is to not discuss facts, but to start a conversation about where we are headed to as a species.
+
 <!-- wp:heading -->
 <h2>Evolution</h2>
 <!-- /wp:heading -->
