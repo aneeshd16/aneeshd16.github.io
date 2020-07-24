@@ -20,7 +20,7 @@ tags: random
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>We know very little about exactly what knowledge is passed on and how it has changed over previous generations. However, for the first time in the history of life on earth, we developed methods to pass on knowledge to following generations without relying on genetic material. As a result, upcoming generations will have access to exponentially more knowledge. If you are reading this, you already have access to more knowledge than Einstein or Newton even though you may not have their mental capabilities.</p>
+<p>We know very little about exactly what genetic knowledge is passed on and how it has changed over previous generations. However, for the first time in the history of life on earth, we developed methods to pass on knowledge to following generations without relying on genetic material. As a result, upcoming generations will have access to exponentially more knowledge. We already have access to more knowledge than Einstein or Newton even though we may not have their mental capabilities.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
