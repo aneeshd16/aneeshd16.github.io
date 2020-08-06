@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Node streams for AWS SQS</title>
+<meta name="description" content="TL;DR:SQS as a write stream.">
+
+<link rel="stylesheet" href="/css/main.css">
+<link rel="canonical" href="https://aneesh.xyz/blog/2020/node-streams-for-aws-sqs/">
+<link rel="alternate" type="application/rss+xml" title="Aneesh Devasthale" href="https://aneesh.xyz/feed.xml" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57612266-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</head>
+<body>
+  <header class="site-header">
+  <div class="container">
+    <input type="checkbox" id="toggleNavbar">
+    <h1 class="logo"><a href="/"></a></h1>
+    <label for="toggleNavbar" role="button" class="toggle-navbar-button">
+      <i class="icon icon-menu"></i>
+      <i class="icon icon-cross"></i>
+    </label>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/" title="Home">Home</a></li>
+        
+          <li><a href="/about" title="About">About</a></li>
+        
+          <li><a href="/talks" title="Talks">Talks</a></li>
+        
+          <li><a href="/blog" title="Blog">Blog</a></li>
+        
+        <li><a href="/feed.xml" target="_blank"><i class="icon icon-rss"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="main-container">
+  <div class="container">
+    <article role="article" class="post">
+
+  <div class="card">
+    <header class="post-header">
+      <h1 class="post-title">Node streams for AWS SQS</h1>
+      <em class="post-meta">
+        <time>May 21, 2020</time>
+      </em>
+    </header>
+
+    <div class="post-content">
+      
+      <h2 id="tldr">TL;DR:</h2>
+<p>SQS as a write stream.</p>
+
+<p>Installation</p>
+<pre><code>npm i node-sqs-stream
+</code></pre>
+<p>or</p>
+<pre><code>yarn add node-sqs-stream
+</code></pre>
+
+<p>Link to Github project - <a href="https://github.com/aneeshd16/node-sqs-stream">https://github.com/aneeshd16/node-sqs-stream</a></p>
+
+<p>If you’ve worked in Node.js for a while, you’ve probably heard of streams. I spent years knowing that streams exist, but never understood how they worked. Streams are one of the fundamental concepts that power Node.js applications. I learnt how streams work only recently and have been applying them in my projects for great results.</p>
+
+<h1 id="node-sqs-stream">Node SQS Stream</h1>
+<p>A Writable stream interface for AWS SQS. Stream data to AWS SQS directly from your read/transform streams. Uses <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html">SQS batch send</a> to reduce costs. Batteries not included! Pass in your sqs client:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span></span><span class="kr">const</span> <span class="nx">sqsClient</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AWS</span><span class="p">.</span><span class="nx">SQS</span><span class="p">({</span><span class="nx">apiVersion</span><span class="o">:</span> <span class="s1">&#39;2012-11-05&#39;</span><span class="p">});</span>
+<span class="kr">const</span> <span class="nx">sqsStream</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SQSWritableStream</span><span class="p">({</span>
+    <span class="nx">sqsClient</span><span class="o">:</span> <span class="nx">sqsClient</span><span class="p">,</span>
+    <span class="nx">queueUrl</span><span class="o">:</span> <span class="s1">&#39;http://example-sqs-url&#39;</span><span class="p">,</span>
+<span class="p">});</span>
+<span class="nx">someStream</span><span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">sqsStream</span><span class="p">);</span></code></pre></figure>
+
+<h2 id="motivation">Motivation</h2>
+<p>I had a use case where the contents of an entire Postgres database had to be transformed and then pushed to a SQS queue. One way to do this was to fetch results from Postgres in batches, transform and then send to SQS. However, while waiting for the next batch from Postgres, the process was essentially idle. This time could have been utilized for transformation or sending data to SQS also. The final solution was to stream results from Postgres using the excellent <a href="https://www.npmjs.com/package/pg-query-stream">pg-query-stream</a>, use a custom Transform stream for my data transformation and then pipe the results into node-sqs-stream.</p>
+
+<h2 id="why-streams">Why Streams</h2>
+<p>Consider a use case where you need to run a series of tasks on a collection of data. For example - Read data from a file, convert it to upper case and then write it back to another file. Your code might look like this:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span></span><span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span>
+
+<span class="c1">//Callbacks</span>
+<span class="nx">fs</span><span class="p">.</span><span class="nx">readFile</span><span class="p">(</span><span class="s1">&#39;in.txt&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+	<span class="kr">const</span> <span class="nx">upperCase</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">toString</span><span class="p">().</span><span class="nx">toUpperCase</span><span class="p">();</span>
+	<span class="nx">fs</span><span class="p">.</span><span class="nx">writeFile</span><span class="p">(</span><span class="s1">&#39;out.txt&#39;</span><span class="p">,</span> <span class="nx">upperCase</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;done callbacks&#39;</span><span class="p">);</span>
+	<span class="p">});</span>
+<span class="p">});</span>
+
+<span class="c1">// Promises</span>
+<span class="nx">fs</span><span class="p">.</span><span class="nx">promises</span><span class="p">.</span><span class="nx">readFile</span><span class="p">(</span><span class="s1">&#39;in.txt&#39;</span><span class="p">)</span>
+	<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">toString</span><span class="p">().</span><span class="nx">toUpperCase</span><span class="p">())</span>
+	<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">promises</span><span class="p">.</span><span class="nx">writeFile</span><span class="p">(</span><span class="s1">&#39;out.txt&#39;</span><span class="p">,</span> <span class="nx">data</span><span class="p">))</span>
+	<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;done promises&#39;</span><span class="p">))</span>
+	<span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">));</span>
+
+<span class="c1">// Async Await</span>
+<span class="p">(</span><span class="nx">async</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+	<span class="k">try</span> <span class="p">{</span>
+		<span class="kr">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">promises</span><span class="p">.</span><span class="nx">readFile</span><span class="p">(</span><span class="s1">&#39;in.txt&#39;</span><span class="p">);</span>
+		<span class="kr">const</span> <span class="nx">upperCase</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">toString</span><span class="p">().</span><span class="nx">toUpperCase</span><span class="p">();</span>
+		<span class="nx">await</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">promises</span><span class="p">.</span><span class="nx">writeFile</span><span class="p">(</span><span class="s1">&#39;out.txt&#39;</span><span class="p">,</span> <span class="nx">upperCase</span><span class="p">);</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;done async/await&#39;</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">})();</span></code></pre></figure>
+
+<p>While all this is pretty straightforward, what happens when the file size is larger than available memory? All three methods above load the complete contents of the file in memory, modify them <em>in memory</em> and then write it back to another file. Streams can help us solve this problem. We can view the operation as 3 independent steps:</p>
+<ol>
+  <li>Read bytes from a file</li>
+  <li>Convert bytes to string and then uppercase it</li>
+  <li>Write bytes to a file</li>
+</ol>
+
+<p>The above code looks like this when implemented with streams:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span></span><span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">);</span>
+<span class="c1">// Read Stream</span>
+<span class="kr">const</span> <span class="nx">inStream</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">createReadStream</span><span class="p">(</span><span class="s1">&#39;in.txt&#39;</span><span class="p">);</span>
+<span class="c1">// Write Stream</span>
+<span class="kr">const</span> <span class="nx">outStream</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">createWriteStream</span><span class="p">(</span><span class="s1">&#39;out.txt&#39;</span><span class="p">);</span>
+<span class="c1">// Custom Transform Stream</span>
+<span class="kr">const</span> <span class="nx">upperCaser</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Transform</span><span class="p">({</span>
+  <span class="nx">transform</span><span class="p">(</span><span class="nx">chunk</span><span class="p">,</span> <span class="nx">encoding</span><span class="p">,</span> <span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">chunk</span><span class="p">.</span><span class="nx">toString</span><span class="p">().</span><span class="nx">toUpperCase</span><span class="p">());</span>
+    <span class="nx">callback</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="c1">// Push data from inStream -&gt; upperCaser -&gt; outStream</span>
+<span class="nx">inStream</span><span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">upperCaser</span><span class="p">).</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">outStream</span><span class="p">);</span></code></pre></figure>
+
+<p>You can run this code on a file with infinite size with limited memory resources. There are many resources online to explain how streams work in detail, but my TL;DR version is this:</p>
+
+<p>Imagine a stream is dam. A dam has finite capacity. Water from the river keeps on flowing towards the dam. When the dam becomes full, it is opened till it can hold water again.</p>
+
+<p>In the NodeJS world, each stream has a buffer. When the buffer is full, the contents of the buffer are sent to the next stream as a “chunk”.</p>
+
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+  <li><a href="https://www.freecodecamp.org/news/node-js-streams-everything-you-need-to-know-c9141306be93/">https://www.freecodecamp.org/news/node-js-streams-everything-you-need-to-know-c9141306be93/</a></li>
+  <li><a href="https://nodesource.com/blog/understanding-streams-in-nodejs/">https://nodesource.com/blog/understanding-streams-in-nodejs/</a></li>
+  <li><a href="https://www.bennadel.com/blog/3236-using-transform-streams-to-manage-backpressure-for-asynchronous-tasks-in-node-js.htm">https://www.bennadel.com/blog/3236-using-transform-streams-to-manage-backpressure-for-asynchronous-tasks-in-node-js.htm</a></li>
+</ul>
+
+    </div>
+
+    
+<hr>
+
+<div id="disqus_thread"></div>
+<script>
+
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://aneesh-xyz.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+
+
+  </div>
+
+</article>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="social">
+  <li><a href="https://github.com/aneeshd16" target="_blank"><i class="icon icon-github"></i></a></li>
+  <li><a href="https://www.instagram.com/aneeshd16" target="_blank"><i class="icon icon-instagram"></i></a></li>
+  <li><a href="https://facebook.com/aneeshdevasthale" target="_blank"><i class="icon icon-facebook"></i></a></li>
+  <li><a href="https://linkedin.com/in/aneeshdevasthale" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+</ul>
+    <p class="txt-medium-gray">
+      <small>&copy;2020 All rights reserved. Made with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and ♥</small>
+    </p>
+  </div>
+</footer>
+
+
+</body>
+</html>

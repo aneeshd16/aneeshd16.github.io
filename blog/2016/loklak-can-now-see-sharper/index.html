@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Loklak can now see sharper</title>
+<meta name="description" content="        As you might already know, I always had a soft corner in my heart for Microsoft, Windows and C#. I got my first major successes developing on that pl...">
+
+<link rel="stylesheet" href="/css/main.css">
+<link rel="canonical" href="https://aneesh.xyz/blog/2016/loklak-can-now-see-sharper/">
+<link rel="alternate" type="application/rss+xml" title="Aneesh Devasthale" href="https://aneesh.xyz/feed.xml" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57612266-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</head>
+<body>
+  <header class="site-header">
+  <div class="container">
+    <input type="checkbox" id="toggleNavbar">
+    <h1 class="logo"><a href="/"></a></h1>
+    <label for="toggleNavbar" role="button" class="toggle-navbar-button">
+      <i class="icon icon-menu"></i>
+      <i class="icon icon-cross"></i>
+    </label>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/" title="Home">Home</a></li>
+        
+          <li><a href="/about" title="About">About</a></li>
+        
+          <li><a href="/talks" title="Talks">Talks</a></li>
+        
+          <li><a href="/blog" title="Blog">Blog</a></li>
+        
+        <li><a href="/feed.xml" target="_blank"><i class="icon icon-rss"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="main-container">
+  <div class="container">
+    <article role="article" class="post">
+
+  <div class="card">
+    <header class="post-header">
+      <h1 class="post-title">Loklak can now see sharper</h1>
+      <em class="post-meta">
+        <time>Mar 1, 2016</time>
+      </em>
+    </header>
+
+    <div class="post-content">
+      
+      <div class="content">
+        <p><p>As you might <a href="/blog/2015/dentro-and-my-experiences-in-the-nokia-dogood-hackathon">already know</a>, I always had a soft corner in my heart for Microsoft, Windows and C#. I got my first major successes developing on that platform, and to be honest, I still think developing in Visual Studio is the best thing ever.</p>
+<br />
+<br /><blockquote>
+<br /><p>Visual Studio feels like everything is right in the world.</p>
+<br /></blockquote>
+<br />
+<br /><p>I set out to develop a C# wrapper for the<a href="http://loklak.org/"> Loklak server</a>, partly because I wanted more people to use Loklak on Windows, and partly&nbsp;to satisfy my Visual Studio cravings.</p>
+<br />
+<br /><p>My objectives were simple:</p>
+<br />
+<br /><ol>
+<br />	<li>It should be platform independent.</li>
+<br />	<li>It should support all Loklak server API calls.</li>
+<br />	<li>It should follow the async/await pattern.</li>
+<br />	<li>It should have tests.</li>
+<br /></ol>
+<br />
+<br /><p>Well, I solved all those problems. Here is the final result. <a href="https://github.com/loklak/LoklakDotNet">LoklakDotNet on Github.</a></p>
+<br />
+<br /><h2>Supported Platforms are:</h2>
+<br />
+<br /><ol>
+<br />	<li>.NET Framework 4.5</li>
+<br />	<li>ASP.NET Core 5.0</li>
+<br />	<li>Windows 8/8.1</li>
+<br />	<li>Windows Universal (UWP)</li>
+<br />	<li>Windows Phone 8.1</li>
+<br />	<li>Windows Phone Silverlight 8.1</li>
+<br />	<li>Xamarin.Android</li>
+<br />	<li>Xamarin.iOS</li>
+<br />	<li>Xamarin.iOS (Classic)</li>
+<br /></ol>
+<br />
+<br /><p>Wow. That&#39;s a lot.</p>
+<br />
+<br /><p>The wrapper gives the raw JSON results from the server. You can choose to parse the JSON however you wish. <a href="http://www.newtonsoft.com/json">Newtonsoft.JSON</a> is highly recommened.&nbsp;You <a href="https://github.com/loklak/LoklakDotNet">can view the documentation for LoklakDotNet&nbsp;here.</a>&nbsp;</p>
+<br />
+<br /><p>Side Note: The documentation looks really cool. I used an automated doc generation tool.</p>
+<br />
+<br /><p>The wrapper is still in its early stages, so go ahead and <a href="https://github.com/loklak/LoklakDotNet">submit a PR!</a></p>
+<br />
+<br /><p><img alt="" src="http://biblipole.com/images/pictuers/do_you_know_how_c_talking.png" style="height:101px; width:662px" /></p>
+<br /></p>
+    </div>
+
+    </div>
+
+    
+<hr>
+
+<div id="disqus_thread"></div>
+<script>
+
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://aneesh-xyz.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+
+
+  </div>
+
+</article>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="social">
+  <li><a href="https://github.com/aneeshd16" target="_blank"><i class="icon icon-github"></i></a></li>
+  <li><a href="https://www.instagram.com/aneeshd16" target="_blank"><i class="icon icon-instagram"></i></a></li>
+  <li><a href="https://facebook.com/aneeshdevasthale" target="_blank"><i class="icon icon-facebook"></i></a></li>
+  <li><a href="https://linkedin.com/in/aneeshdevasthale" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+</ul>
+    <p class="txt-medium-gray">
+      <small>&copy;2020 All rights reserved. Made with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and ♥</small>
+    </p>
+  </div>
+</footer>
+
+
+</body>
+</html>

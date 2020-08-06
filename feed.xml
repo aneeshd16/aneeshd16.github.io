@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aneesh Devasthale</title>
+    <description>Aneesh Devasthale</description>
+    <link>https://aneesh.xyz/</link>
+    <atom:link href="https://aneesh.xyz/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 06 Aug 2020 14:36:59 +0530</pubDate>
+    <lastBuildDate>Thu, 06 Aug 2020 14:36:59 +0530</lastBuildDate>
+    <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>Evolution and the dimensionality of species</title>
+        <description>&lt;p&gt;This is the first post of this type that I have written. It’s highly opinionated and may not reflect the current accepted understanding of the topic. The objective of this post is to not discuss facts, but to start a conversation about where we are headed to as a species.&lt;/p&gt;
+
+&lt;!-- wp:heading --&gt;
+&lt;h2&gt;Evolution&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The process of evolution involves the passing of genetic knowledge from one generation to the next. That is how we get our &quot;instincts&quot; or our &quot;fight or flee&quot; response. Modern societal life urges us to suppress these instincts and act based on conscious thought. Survival is not completely dependent on physical attributes; it is biased towards thought, action and communication. While not fully suppressed, our responses have become more nuanced. As we proceed though the generations, these responses will gradually become insignificant.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;We know very little about exactly what genetic knowledge is passed on and how it has changed over previous generations. However, for the first time in the history of life on earth, we developed methods to pass on knowledge to following generations without relying on genetic material. As a result, upcoming generations will have access to exponentially more knowledge. We already have access to more knowledge than Einstein or Newton even though we may not have their mental capabilities.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;We are a fairly young species - merely 200,000 years old but we have already escaped the cycle of evolution. Instead of environmental triggers shaping evolution, we shape the environment itself. And due to this, we resist change. Any mutations or any deviation from the ordinary are &quot;cured&quot;. Would humans 200,000 years from now look different than us? Maybe not.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:heading --&gt;
+&lt;h2&gt;Dimensions&lt;/h2&gt;
+&lt;!-- /wp:heading --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;One aspect of evolution of life on earth is that each major iteration has given life the ability to sense more dimensions and even &lt;a href=&quot;https://en.wikipedia.org/wiki/Motility&quot;&gt;motility&lt;/a&gt; in those dimensions. If we look at the timeline of evolution,&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:list --&gt;
+&lt;ul&gt;&lt;li&gt;4000 million years ago - Single celled non motile organisms (&lt;em&gt;one dimensional&lt;/em&gt;)&lt;/li&gt;&lt;li&gt;900 million years ago - Single/Multi celled organisms capable of travelling on flat surfaces (&lt;em&gt;two dimensional)&lt;/em&gt;&lt;/li&gt;&lt;li&gt;500 million years ago - Organisms capable of moving in 3 dimensions (animals, fishes, birds, etc)&lt;/li&gt;&lt;/ul&gt;
+&lt;!-- /wp:list --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;We exist in four dimensions - three spatial dimensions (along the X, Y , Z axes) and the time dimension. We can freely move in the three spatial ones, but our movement in the time dimension is not controlled by us. We are continuously moving through time. After all, when we move in three dimensions from one place to another, we do not move instantaneously; it does require some finite amount of time. In a sense, we already move through the time dimension but in only one direction (forwards) and at the same speed. In fact, all objects in the &lt;em&gt;known&lt;/em&gt; universe are continuously moving through time even if they are stationary in space.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;As a thought experiment, we can imagine what happens when an object stops moving in time - it would seem to disappear since it is now stuck in the past. Try to imagine to how objects would appear when they are moving slower or faster than us through time.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;You might come to the conclusion that since we are moving at a constant speed, we always perceive a &quot;slice&quot; of time. In the way a sphere printed on paper looks like a circle, we also perceive only the &quot;current&quot; slice of the universe.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;What if the next step in evolution is the ability to move through time? This would not mean &quot;time travel&quot; the way it is portrayed in popular culture where our titular heroes jump through time  It could mean experiencing several or all moments in life at the same instant. When you see someone, you instantly see all of their past and all of their future. Emotional responses are redundant since all outcomes are already known. Could this be the next step in human evolution, the age of the &lt;a href=&quot;https://www.ynharari.com/book/homo-deus/&quot;&gt;Homo Deus&lt;/a&gt;? If it is possible to know your future, it also gives rise to the question whether free will truly exists - a discussion for another time.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+</description>
+        <pubDate>Mon, 20 Jul 2020 06:59:14 +0530</pubDate>
+        <link>https://aneesh.xyz/blog/2020/evolution-and-the-dimensionality-of-species/</link>
+        <guid isPermaLink="true">https://aneesh.xyz/blog/2020/evolution-and-the-dimensionality-of-species/</guid>
+        
+        <category>random</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Node streams for AWS SQS</title>
+        <description>&lt;h2 id=&quot;tldr&quot;&gt;TL;DR:&lt;/h2&gt;
+&lt;p&gt;SQS as a write stream.&lt;/p&gt;
+
+&lt;p&gt;Installation&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm i node-sqs-stream
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;yarn add node-sqs-stream
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Link to Github project - &lt;a href=&quot;https://github.com/aneeshd16/node-sqs-stream&quot;&gt;https://github.com/aneeshd16/node-sqs-stream&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’ve worked in Node.js for a while, you’ve probably heard of streams. I spent years knowing that streams exist, but never understood how they worked. Streams are one of the fundamental concepts that power Node.js applications. I learnt how streams work only recently and have been applying them in my projects for great results.&lt;/p&gt;
+
+&lt;h1 id=&quot;node-sqs-stream&quot;&gt;Node SQS Stream&lt;/h1&gt;
+&lt;p&gt;A Writable stream interface for AWS SQS. Stream data to AWS SQS directly from your read/transform streams. Uses &lt;a href=&quot;https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html&quot;&gt;SQS batch send&lt;/a&gt; to reduce costs. Batteries not included! Pass in your sqs client:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sqsClient&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;AWS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;SQS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;apiVersion&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;2012-11-05&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sqsStream&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SQSWritableStream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;sqsClient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sqsClient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;queueUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;http://example-sqs-url&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;someStream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sqsStream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;I had a use case where the contents of an entire Postgres database had to be transformed and then pushed to a SQS queue. One way to do this was to fetch results from Postgres in batches, transform and then send to SQS. However, while waiting for the next batch from Postgres, the process was essentially idle. This time could have been utilized for transformation or sending data to SQS also. The final solution was to stream results from Postgres using the excellent &lt;a href=&quot;https://www.npmjs.com/package/pg-query-stream&quot;&gt;pg-query-stream&lt;/a&gt;, use a custom Transform stream for my data transformation and then pipe the results into node-sqs-stream.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-streams&quot;&gt;Why Streams&lt;/h2&gt;
+&lt;p&gt;Consider a use case where you need to run a series of tasks on a collection of data. For example - Read data from a file, convert it to upper case and then write it back to another file. Your code might look like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;fs&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//Callbacks&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;readFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;in.txt&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;upperCase&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toUpperCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;writeFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;out.txt&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;upperCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;done callbacks&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Promises&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;promises&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;readFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;in.txt&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toUpperCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;promises&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;writeFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;out.txt&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;done promises&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Async Await&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;promises&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;readFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;in.txt&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+		&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;upperCase&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toUpperCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+		&lt;span class=&quot;nx&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;promises&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;writeFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;out.txt&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;upperCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+		&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;done async/await&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;While all this is pretty straightforward, what happens when the file size is larger than available memory? All three methods above load the complete contents of the file in memory, modify them &lt;em&gt;in memory&lt;/em&gt; and then write it back to another file. Streams can help us solve this problem. We can view the operation as 3 independent steps:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Read bytes from a file&lt;/li&gt;
+  &lt;li&gt;Convert bytes to string and then uppercase it&lt;/li&gt;
+  &lt;li&gt;Write bytes to a file&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The above code looks like this when implemented with streams:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;fs&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Read Stream&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;inStream&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createReadStream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;in.txt&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Write Stream&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;outStream&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createWriteStream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;out.txt&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Custom Transform Stream&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;upperCaser&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;chunk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;encoding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;chunk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toUpperCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Push data from inStream -&amp;gt; upperCaser -&amp;gt; outStream&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;inStream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;upperCaser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;outStream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;You can run this code on a file with infinite size with limited memory resources. There are many resources online to explain how streams work in detail, but my TL;DR version is this:&lt;/p&gt;
+
+&lt;p&gt;Imagine a stream is dam. A dam has finite capacity. Water from the river keeps on flowing towards the dam. When the dam becomes full, it is opened till it can hold water again.&lt;/p&gt;
+
+&lt;p&gt;In the NodeJS world, each stream has a buffer. When the buffer is full, the contents of the buffer are sent to the next stream as a “chunk”.&lt;/p&gt;
+
+&lt;h2 id=&quot;further-reading&quot;&gt;Further Reading&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.freecodecamp.org/news/node-js-streams-everything-you-need-to-know-c9141306be93/&quot;&gt;https://www.freecodecamp.org/news/node-js-streams-everything-you-need-to-know-c9141306be93/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nodesource.com/blog/understanding-streams-in-nodejs/&quot;&gt;https://nodesource.com/blog/understanding-streams-in-nodejs/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.bennadel.com/blog/3236-using-transform-streams-to-manage-backpressure-for-asynchronous-tasks-in-node-js.htm&quot;&gt;https://www.bennadel.com/blog/3236-using-transform-streams-to-manage-backpressure-for-asynchronous-tasks-in-node-js.htm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 21 May 2020 23:36:24 +0530</pubDate>
+        <link>https://aneesh.xyz/blog/2020/node-streams-for-aws-sqs/</link>
+        <guid isPermaLink="true">https://aneesh.xyz/blog/2020/node-streams-for-aws-sqs/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Loklak on Heroku</title>
+        <description>&lt;div class=&quot;content&quot;&gt;
+        &lt;p&gt;&lt;p&gt;Over the last one year Loklak has been turning into quite a huge project. The main Loklak site (&lt;a href=&quot;http://loklak.org&quot;&gt;http://loklak.org&lt;/a&gt;) hosts 125 million messages for 14 million users! How cool is that?&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;Loklak is a P2P based service; the more peers, the better the service. Till very recently, the only way to have&amp;nbsp;your own Loklak instance was to spin up a VM on a cloud provider, and then follow the instructions to install, build and start the Loklak server. This also meant that you had to download and install all required dependencies like JDK, ant, etc. Also, if the server unexpectedly shut down, you had to manually restart it. A major leap came when Loklak was dockerized. Yes! Loklak can now be easily installed with Docker. &lt;a href=&quot;https://github.com/loklak/loklak_server/blob/master/installation_docker.md&quot;&gt;Here are the instructions to deploy Loklak with Docker.&lt;/a&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;A key piece missing was deployment to PaaS providers like Heroku. Heroku makes it super easy for developers and organizations to deploy the code without needing to worry about maintenance and deployment issues. You just need to upload your code and Heroku takes care of the rest. Since its underlying stack is Debian based Ubuntu, most applications will have no trouble running on it. However, Heroku does not give you direct access to the VM per se. There is no terminal access. All deployment and build commands are in a special file named &lt;code&gt;Procfile&lt;/code&gt;, stored in the root directory of your project. This can handle most use cases and programming languages but not stuff like custom builds and deployment. To overcome this, Heroku has given us the option to &lt;a href=&quot;https://devcenter.heroku.com/articles/third-party-buildpacks&quot;&gt;create custom buildpacks&lt;/a&gt;. To enable the deployment of Loklak on Heroku, a new buildpack was needed. The buildpack needed to:&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;ol&gt;
+&lt;br /&gt;	&lt;li&gt;Download JDK and ant.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Build the project&amp;nbsp;using the &lt;code&gt;ant &lt;/code&gt;command.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Start the server using the custom shell script in the &lt;code&gt;bin &lt;/code&gt;directory of the project.&lt;/li&gt;
+&lt;br /&gt;&lt;/ol&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;Luckily, I found an &lt;a href=&quot;https://github.com/dennisg/heroku-buildpack-ant&quot;&gt;excellent buildpack for building ant projects to Heroku&lt;/a&gt;. I promptly forked it and began writing my own modifications so that it could be used with Loklak server. I finally ended up with&lt;a href=&quot;https://github.com/aneeshd16/heroku-buildpack-ant-loklak&quot;&gt;&amp;nbsp;Heroku buildpack for Loklak: Java (with Apache Ant)&lt;/a&gt;. I also had to make a special start-up script in the Loklak server project so that the server runs in the foreground and logs are properly forwarded to Heroku&amp;#39;s logging utility.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;h2 style=&quot;margin-left:0px; margin-right:0px&quot;&gt;How to run the Loklak server on Heroku&lt;/h2&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;ol&gt;
+&lt;br /&gt;	&lt;li&gt;Create a Heroku account&amp;nbsp;&lt;a href=&quot;https://www.heroku.com/&quot; style=&quot;box-sizing: border-box; color: rgb(64, 120, 192); text-decoration: none; background-color: transparent;&quot;&gt;https://www.heroku.com/&lt;/a&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Download the Heroku toolbelt&amp;nbsp;&lt;a href=&quot;https://toolbelt.heroku.com/&quot; style=&quot;box-sizing: border-box; color: rgb(64, 120, 192); text-decoration: none; background-color: transparent;&quot;&gt;https://toolbelt.heroku.com/&lt;/a&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Login with heroku:&amp;nbsp;&lt;code&gt;heroku login&lt;/code&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Clone the Loklak server (if not already) :&amp;nbsp;&lt;code&gt;git clone https://github.com/loklak/loklak_server.git&lt;/code&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Create a heroku app:&amp;nbsp;&lt;code&gt;heroku create&lt;/code&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Set the buildpack:&amp;nbsp;&lt;code&gt;heroku buildpacks:set https://github.com/aneeshd16/heroku-buildpack-ant-loklak.git&lt;/code&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Push your app to heroku:&amp;nbsp;&lt;code&gt;git push heroku master&lt;/code&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Confirm the loklak server is running:&amp;nbsp;&lt;code&gt;heroku logs --tail&lt;/code&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Sometimes the server may take a while to start. The logs would show&amp;nbsp;&lt;code&gt;State changed from starting to up&lt;/code&gt;&amp;nbsp;when the server is ready.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Open the URL of your server in your browser:&amp;nbsp;&lt;code&gt;heroku open&lt;/code&gt;.&lt;/li&gt;
+&lt;br /&gt;&lt;/ol&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;And that&amp;#39;s it! Seems like the easiest way to deploy Loklak to the cloud. Keep in mind that a free dyno on heroku sleeps after some period of inactivity, and it may take a while for it to start up from the sleep phase. You can always upgrade to a paid tier if you wish. (Wish Heroku paid me for this post)&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://s.quickmeme.com/img/8c/8c86006f69f9a7f08140063782154842ef188b3a4a8eaa36457c90bb61a43884.jpg&quot; style=&quot;height:481px; width:550px&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;&lt;/p&gt;
+    &lt;/div&gt;
+</description>
+        <pubDate>Tue, 01 Mar 2016 16:30:27 +0530</pubDate>
+        <link>https://aneesh.xyz/blog/2016/loklak-on-heroku/</link>
+        <guid isPermaLink="true">https://aneesh.xyz/blog/2016/loklak-on-heroku/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Loklak can now see sharper</title>
+        <description>&lt;div class=&quot;content&quot;&gt;
+        &lt;p&gt;&lt;p&gt;As you might &lt;a href=&quot;/blog/2015/dentro-and-my-experiences-in-the-nokia-dogood-hackathon&quot;&gt;already know&lt;/a&gt;, I always had a soft corner in my heart for Microsoft, Windows and C#. I got my first major successes developing on that platform, and to be honest, I still think developing in Visual Studio is the best thing ever.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;blockquote&gt;
+&lt;br /&gt;&lt;p&gt;Visual Studio feels like everything is right in the world.&lt;/p&gt;
+&lt;br /&gt;&lt;/blockquote&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;I set out to develop a C# wrapper for the&lt;a href=&quot;http://loklak.org/&quot;&gt; Loklak server&lt;/a&gt;, partly because I wanted more people to use Loklak on Windows, and partly&amp;nbsp;to satisfy my Visual Studio cravings.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;My objectives were simple:&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;ol&gt;
+&lt;br /&gt;	&lt;li&gt;It should be platform independent.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;It should support all Loklak server API calls.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;It should follow the async/await pattern.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;It should have tests.&lt;/li&gt;
+&lt;br /&gt;&lt;/ol&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;Well, I solved all those problems. Here is the final result. &lt;a href=&quot;https://github.com/loklak/LoklakDotNet&quot;&gt;LoklakDotNet on Github.&lt;/a&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;h2&gt;Supported Platforms are:&lt;/h2&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;ol&gt;
+&lt;br /&gt;	&lt;li&gt;.NET Framework 4.5&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;ASP.NET Core 5.0&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Windows 8/8.1&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Windows Universal (UWP)&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Windows Phone 8.1&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Windows Phone Silverlight 8.1&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Xamarin.Android&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Xamarin.iOS&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Xamarin.iOS (Classic)&lt;/li&gt;
+&lt;br /&gt;&lt;/ol&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;Wow. That&amp;#39;s a lot.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;The wrapper gives the raw JSON results from the server. You can choose to parse the JSON however you wish. &lt;a href=&quot;http://www.newtonsoft.com/json&quot;&gt;Newtonsoft.JSON&lt;/a&gt; is highly recommened.&amp;nbsp;You &lt;a href=&quot;https://github.com/loklak/LoklakDotNet&quot;&gt;can view the documentation for LoklakDotNet&amp;nbsp;here.&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;Side Note: The documentation looks really cool. I used an automated doc generation tool.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;The wrapper is still in its early stages, so go ahead and &lt;a href=&quot;https://github.com/loklak/LoklakDotNet&quot;&gt;submit a PR!&lt;/a&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://biblipole.com/images/pictuers/do_you_know_how_c_talking.png&quot; style=&quot;height:101px; width:662px&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;&lt;/p&gt;
+    &lt;/div&gt;
+</description>
+        <pubDate>Tue, 01 Mar 2016 16:24:30 +0530</pubDate>
+        <link>https://aneesh.xyz/blog/2016/loklak-can-now-see-sharper/</link>
+        <guid isPermaLink="true">https://aneesh.xyz/blog/2016/loklak-can-now-see-sharper/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>How to copy the Windows partition to a new SSD</title>
+        <description>&lt;div class=&quot;content&quot;&gt;
+        &lt;p&gt;&lt;p&gt;&lt;a href=&quot;#soln&quot;&gt;Skip to the Solution&lt;/a&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;h2&gt;Solidly Stating the Obvious&lt;/h2&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;The summer had ended successfully, and I was ready to start some serious work. Over a period of 3 years, I had developed massive amounts of patience while watching my laptop boot from nought to 60 in 5 minutes. As my hard drive slowly started to fill up and the imaginary &lt;em&gt;jellyfication&lt;/em&gt;&amp;nbsp;of its innards, I decided that this was unacceptable and&amp;nbsp;the first&amp;nbsp;upgrade to my laptop&amp;nbsp;was in order. Based from&amp;nbsp;reviews on&amp;nbsp;the net, a SSD seemed the perfect choice for speeding up my system. A trip to Nehru Place, and I was ready with a brand new 120GB Kingston SV300S37A SSD. I got to know about its shoddy performance a day later. After all, who would have guessed that a product from a well known company like Kingston would have such &lt;a href=&quot;http://www.flipkart.com/kingston-sv300s37a-120g-internal-hard-drive/p/itmdhdk6xxd8rs8q?pid=IHDDHDK6XXD8RS8Q&amp;amp;icmpid=reco_pp_hsame_computeraccessory_internalharddrive_1&amp;amp;ppid=IHDDSX94PTMCSZFK&quot; target=&quot;_blank&quot;&gt;serious issues&lt;/a&gt;? A few flaws notwithstanding, I convinced myself that given the cost, it was probably not a bad deal. I decided to go ahead with this.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;h2&gt;The Caddy Conundrum&lt;/h2&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;Now, I had the internal 1TB hard disk drive in my laptop which was divided into two partitions of approx equal size. One containing Windows (C:) and the other (B:) containing my &lt;strong&gt;super top secret stuff&lt;/strong&gt;.&lt;strong&gt;​​​&amp;nbsp;&lt;/strong&gt;Now I cannot junk my old hard drive and live with just 120GB, can I? Nuh uh. But, I could sure live without my DVD drive which I might have used as many times as &lt;em&gt;Apple has invented a brand new product.&lt;/em&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;&lt;em&gt;&lt;img alt=&quot;&quot; src=&quot;https://www.neowin.net/images/uploaded/2015/09/x2_story.jpg&quot; style=&quot;height:440px; width:760px&quot; /&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;blockquote&gt;
+&lt;br /&gt;&lt;p&gt;Shots fired.&lt;/p&gt;
+&lt;br /&gt;&lt;/blockquote&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;Coming back to the topic, the solution was to have my new SSD in place of the DVD drive, while fully&amp;nbsp;reading (typo intended) the benefits of my internal HDD. But you cannot possibly&amp;nbsp;just pull out your DVD drive and put in an SSD, can you? The solution was to get a caddy.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://globalgolfermag.com/wp-content/uploads/2012/08/Golf-Caddy.jpg&quot; style=&quot;height:150px; width:124px&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;Not this one.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://img.banggood.com/thumb/view/upload/2012/jiangjunchao/SKU069558%20(7).JPG&quot; style=&quot;height:150px; width:150px&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;This one.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;After an impatient wait, the caddy was delivered to my home, and I was ready to rock. I teared up the SSD and the caddy packing, rolled up my sleeves, switched on my desk lamp and switched on my engineer mode. The caddy makers were kind enough to pack in screws and a screwdriver and in no time the SSD was securely in place. Next step, I had to remove the bracket of my old DVD drive and fit in the caddy into the bracket.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;blockquote&gt;
+&lt;br /&gt;&lt;p&gt;Plot Twist. The screws on the bracket were of a different size.&lt;/p&gt;
+&lt;br /&gt;&lt;/blockquote&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;I desparately tried to find my long lost screwdriver kit and ended up with just one which was too big. Got everyone from my dad to the neighbour&amp;#39;s dog to open the bracket screws with the tools I had, no luck. The next day, a trip to the electrical store got me a new ULTRA MEGA SUPER FREAKIN 31 in 1 screwdriver kit. If this couldn&amp;#39;t open it, I would probably have to buy a magic wand and say&amp;nbsp;&lt;em&gt;&lt;strong&gt;&lt;a href=&quot;http://harrypotter.wikia.com/wiki/Unlocking_Charm&quot;&gt;Alohomora&lt;/a&gt;.&amp;nbsp;&lt;/strong&gt;&lt;/em&gt;But it did, and saved me a trip to&amp;nbsp;Ollivander. I snapped on the bracket onto my caddy and slotted it into my laptop. Things were proceeding smoothly.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;h2&gt;Clone Wars&lt;/h2&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;A basic search for &amp;quot;How to migrate to a SSD&amp;quot; gets you to this &lt;a href=&quot;http://lifehacker.com/5837543/how-to-migrate-to-a-solid-state-drive-without-reinstalling-windows&quot;&gt;article&lt;/a&gt;. Nicely written, it should help you if you want to clone your&amp;nbsp;&lt;strong&gt;&lt;em&gt;entire&lt;/em&gt;&lt;/strong&gt;&amp;nbsp;hard drive to the SSD. I just wanted to clone the Windows (C:) partition to the SSD. My noobness about drives, partitions, volumes, EFI, UEFI and other related stuff notwithstanding, I made a new simple volume on the SSD using the Disk Management Tool (Start-&amp;gt;Run-&amp;gt;diskmgmt.msc), and cloned my C: drive onto the SSD. When I look back and think about this moment, all I can think is&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;blockquote&gt;
+&lt;br /&gt;&lt;p&gt;Dumbass.&lt;/p&gt;
+&lt;br /&gt;&lt;/blockquote&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;Feeling rather pleased with myself for successfully using a simple GUI program to clone a drive, I restarted my laptop and went into the Boot Menu (F2 -&amp;gt; Boot) to select my SSD. The joke was on me though. No SSD in the boot device options. &amp;quot;I should probably replace my internal hard drive with the SSD. Maybe it will boot then.&amp;quot; I thought to myself with the surety of a veteran tech support guy. Alrighty then, I rolled up my sleeves, switched on the desk lamp and switched on my engineer mode &lt;em&gt;again&lt;/em&gt;. Utilizing my newly acquired screwdriver arsenal, the cover came off, the old HDD was out and the SSD was in. Started my laptop, and not suprisingly,&amp;nbsp;&lt;strong&gt;&lt;em&gt;Boot Device Not Found&lt;/em&gt;&lt;/strong&gt;&amp;nbsp;flashed on my screen. Then followed 8&amp;nbsp;hours of swapping drives, creating Windows recovery disks, reading forums, eating cake,&amp;nbsp;and a total of 6 times I had to open up the entire machine.&amp;nbsp;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://i3.kym-cdn.com/entries/icons/original/000/008/012/Template_you_what_you_have_done.jpg&quot; style=&quot;height:200px; width:200px&quot; /&gt;&lt;img alt=&quot;&quot; src=&quot;http://i2.kym-cdn.com/photos/images/newsfeed/000/000/578/1234931504682.jpg&quot; style=&quot;height:200px; width:200px&quot; /&gt;&lt;img alt=&quot;&quot; src=&quot;http://i3.kym-cdn.com/photos/images/newsfeed/000/228/791/632.gif&quot; style=&quot;height:161px; width:200px&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;h2&gt;The Solution.&amp;nbsp;&lt;/h2&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;ol&gt;
+&lt;br /&gt;	&lt;li&gt;Create a recovery USB drive first.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Let the internal HDD be internal, and fit the SSD into the caddy.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Open the Disk Management Tool. Initialize your SSD with GPT. Do not initialize it with MBR.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Check the partitions of your HDD. There will be a partition called &lt;strong&gt;(Healthy)&amp;nbsp;EFI System Partition. &lt;/strong&gt;The first step is to clone this partition first.&amp;nbsp;Note down its size. Mine was 260MB.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Your SSD should show up as&amp;nbsp;&lt;strong&gt;Unallocated&lt;/strong&gt;. Right click on it and select&amp;nbsp;&lt;strong&gt;New Simple Volume&lt;/strong&gt;. Set the size of this partition as the same as that of the&amp;nbsp;&lt;strong&gt;EFI System Partition&lt;/strong&gt;&amp;nbsp;of your HDD. Just proceed with the default options.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Download &lt;a href=&quot;http://www.todo-backup.com/products/home/free-backup-software.htm&quot; target=&quot;_blank&quot;&gt;EaseUS Todo Backup Free Edition&lt;/a&gt;.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Open the program and click on &lt;strong&gt;Clone&lt;/strong&gt;. Select the&amp;nbsp;&lt;strong&gt;EFI System Partition&lt;/strong&gt;&amp;nbsp;as the &lt;strong&gt;Source&lt;/strong&gt;. It won&amp;#39;t be listed as that, but you can cross check how much space it occupies and select that one. For example, I chose the one with 260MB size.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Select your newly made partition as the&amp;nbsp;&lt;strong&gt;Destination&amp;nbsp;&lt;/strong&gt;and make sure to&amp;nbsp;&lt;strong&gt;CHECK &amp;quot;OPTIMIZE FOR SSD&amp;quot;&lt;/strong&gt;&amp;nbsp; in the lower left corner. Begin cloning.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Have tea.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Open Disk Management Tool again and create another volume from the rest of the unallocated space on the SSD. This will store your actual Windows system files.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Now repeating the above steps, open EaseUS Todo Backup and select your Windows partition as&amp;nbsp;&lt;strong&gt;Source&lt;/strong&gt;&amp;nbsp;and the new unused partition on your SSD as the&amp;nbsp;&lt;strong&gt;Destination. Do remember to check the &amp;quot;Optimize for SSD&amp;quot;&amp;nbsp;&lt;/strong&gt;option.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;This might take a long time. Mine took upwards of 2 hours. Take a short nap. You deserved it.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Remove your internal hard drive if you can as it will make subsequent steps easier.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Pop in the recovery disk/USB and boot from it. You can do this by selecting it the boot device options of your BIOS.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Go to&amp;nbsp;&lt;strong&gt;Troubleshoot -&amp;gt; Advanced Options -&amp;gt; Command Prompt.&lt;/strong&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Type&amp;nbsp;&lt;code&gt;C:&lt;/code&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Type the following commands:
+&lt;br /&gt;	&lt;ol&gt;
+&lt;br /&gt;		&lt;li&gt;&lt;code&gt;bootrec /fixmbr&lt;/code&gt;&lt;/li&gt;
+&lt;br /&gt;		&lt;li&gt;&lt;code&gt;bootrec /fixboot&lt;/code&gt;&lt;/li&gt;
+&lt;br /&gt;		&lt;li&gt;&lt;code&gt;bootrec /rebuildbcd&lt;/code&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;/ol&gt;
+&lt;br /&gt;	&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;You should get a success message. Turn off your computer, remove the recovery disk and you should be able to boot into the SSD now.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;All that remains is to pop in your internal hard drive and optionally format it.&lt;/li&gt;
+&lt;br /&gt;&lt;/ol&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;h2&gt;Phew. Time for a victory dance.&lt;/h2&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;&lt;iframe frameborder=&quot;0&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/BROWqjuTM0g&quot; width=&quot;420&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;br /&gt;&lt;/p&gt;
+    &lt;/div&gt;
+</description>
+        <pubDate>Fri, 11 Sep 2015 16:34:51 +0530</pubDate>
+        <link>https://aneesh.xyz/blog/2015/how-to-copy-the-windows-partition-to-a-new-ssd/</link>
+        <guid isPermaLink="true">https://aneesh.xyz/blog/2015/how-to-copy-the-windows-partition-to-a-new-ssd/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>The Loklak Twitter Wall levels up</title>
+        <description>&lt;div class=&quot;content&quot;&gt;
+        &lt;p&gt;&lt;p&gt;Since our last update on this blog, the Loklak twitter wall has changed quite a lot. New UI, new features and loads of bug fixing and enhancements.&amp;nbsp;Creating your new twitter wall is super easy. You can have your twitter wall running in as few as just 3 clicks, or you can spend more time in the wall creation process experimenting with around 20 different options so that the wall is just the way you want it to be&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;. &lt;a href=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-1.png&quot;&gt;&lt;img alt=&quot;Screenshot (1)&quot; class=&quot;alignleft wp-image-57&quot; src=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-1.png?w=300&quot; style=&quot;height:98px; width:174px&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-2.png&quot;&gt;&lt;img alt=&quot;Screenshot (2)&quot; class=&quot;alignleft wp-image-58&quot; src=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-2.png?w=300&quot; style=&quot;height:98px; width:174px&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-3.png&quot;&gt;&lt;img alt=&quot;Screenshot (3)&quot; class=&quot;alignleft wp-image-59&quot; src=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-3.png?w=300&quot; style=&quot;height:98px; width:174px&quot; /&gt;&lt;/a&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;New Features:&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;ul&gt;
+&lt;br /&gt;	&lt;li&gt;Logo upload. You can now upload a logo which will be displayed on your twitter wall.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Specify a place name. Tweets near that place only will be shown.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Block profane tweets with our new and improved Profanity Blocker. While it is impossible to block all profane content, our profanity blocker is constantly learning and improving itself as we collect more tweets.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Images/Video filter&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Negative filter. You can specify what you&amp;nbsp;&lt;em&gt;don&amp;#39;t&amp;nbsp;&lt;/em&gt;want.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Optionally hide the event name and the Loklak logo on the wall.&lt;/li&gt;
+&lt;br /&gt;&lt;/ul&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;All our 4 wall layouts are now available for use:&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;ol&gt;
+&lt;br /&gt;	&lt;li&gt;&lt;strong&gt;The Linear Layout&lt;/strong&gt;: This is a simple layout suitable for all kinds of events. Tweets are displayed in a list that gets updated frequently. 3 to 15 tweets are shown depending on your screen resolution&lt;a href=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-4.png&quot;&gt;&lt;img alt=&quot;Screenshot (4)&quot; class=&quot;aligncenter size-medium wp-image-62&quot; src=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-4.png?w=300&quot; style=&quot;height:169px; width:300px&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;&lt;strong&gt;The Card Layout&lt;/strong&gt;: This layout is particularly useful when you expect your twitter wall to be very active. Tweets are displayed in cards with 6 - 12 tweets being displayed at a time.&lt;br /&gt;
+&lt;br /&gt;	&lt;a href=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-7.png&quot;&gt;&lt;img alt=&quot;Screenshot (7)&quot; class=&quot;aligncenter size-medium wp-image-65&quot; src=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-7.png?w=300&quot; style=&quot;height:169px; width:300px&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;&lt;strong&gt;The Center of Attraction Layout:&amp;nbsp;&lt;/strong&gt;This layout is suitable when your twitter wall is not very active. Only the latest tweet is shown, occupying most of the screen.&lt;br /&gt;
+&lt;br /&gt;	&lt;a href=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-5.png&quot;&gt;&lt;img alt=&quot;Screenshot (5)&quot; class=&quot;aligncenter size-medium wp-image-63&quot; src=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-5.png?w=300&quot; style=&quot;height:169px; width:300px&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;&lt;strong&gt;The Map Layout:&lt;/strong&gt; This is possibly the coolest layout and my personal favorite. Watch as pins drop down on a map and tweets pop up in&amp;nbsp;&lt;em&gt;real time!&lt;/em&gt; An image is not enough, you really have to see this for yourself! &lt;a href=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-6.png&quot;&gt;&lt;img alt=&quot;Screenshot (6)&quot; class=&quot;aligncenter size-medium wp-image-64&quot; src=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-6.png?w=300&quot; style=&quot;height:169px; width:300px&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;br /&gt;&lt;/ol&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;We also have a leaderboard that displays useful stats about your hashtag. You can view top twitterers (yes, that&amp;#39;s what they are called), top hashtags and frequency of tweets over a period of time.&lt;a href=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-8.png&quot;&gt;&lt;img alt=&quot;Screenshot (8)&quot; class=&quot;aligncenter size-medium wp-image-67&quot; src=&quot;https://loklaknet.files.wordpress.com/2015/08/screenshot-8.png?w=300&quot; style=&quot;height:169px; width:300px&quot; /&gt;&lt;/a&gt; &amp;nbsp;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;Meanwhile, we have also moved to&amp;nbsp;&lt;a href=&quot;http://loklak.net&quot; target=&quot;_blank&quot;&gt;loklak.net&lt;/a&gt;! We now have collected more than 40 million tweets and have data from more than 13 million users! More exciting thing soon to come.&lt;/p&gt;
+&lt;br /&gt;&lt;/p&gt;
+    &lt;/div&gt;
+</description>
+        <pubDate>Sun, 16 Aug 2015 16:32:16 +0530</pubDate>
+        <link>https://aneesh.xyz/blog/2015/the-loklak-twitter-wall-levels-up/</link>
+        <guid isPermaLink="true">https://aneesh.xyz/blog/2015/the-loklak-twitter-wall-levels-up/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Dentro and my experiences in the Nokia DoGood Hackathon</title>
+        <description>&lt;div class=&quot;content&quot;&gt;
+        &lt;p&gt;&lt;p&gt;It was the summer of 2013. I had just got a new Windows Phone for my birthday, a Lumia 720. After about a month or so playing with this device, being the tinkerer that I am, I wanted to get started on making apps for Windows Phone as soon as possible. The obvious question arose. &lt;q&gt;How do I start???&lt;/q&gt; I had made a few apps on my Nokia 5800XM before, but this was completely different. I had a whole summer to waste and more importantly, a&amp;nbsp;&lt;strong&gt;&lt;em&gt;good internet connection&lt;/em&gt;&lt;/strong&gt;. I started gathering as much info as possible.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;I was taught Visual Basic in school.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;blockquote&gt;
+&lt;br /&gt;&lt;p&gt;That&amp;#39;s right, VB6 was &lt;strong&gt;awesome&lt;/strong&gt;.&lt;/p&gt;
+&lt;br /&gt;&lt;/blockquote&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;I spent many an afternoon during my school days messing around writing small programs that changed my wallpaper everyday, helped me do certain tasks at startup or a music player with a music library,&amp;nbsp;complete playlist support, changeable skins, drag and drop and&amp;nbsp;a minimized play controls toolbar. Ok, the music player was kinda big, considering I was 13 then. Yeah, yeah I know. I like to brag every now and then. Anyway, I soon realized that VB&amp;nbsp;was not very different from VB.NET (duhhh) and started doing those &lt;code&gt;Hello World!&lt;/code&gt; and example apps right away in VB.NET. I absolutely loved the fact that the language I had spent so much time with in school could be used here as well. I followed the tutorial videos from &lt;a href=&quot;http://channel9.msdn.com/&quot;&gt;Channel9&lt;/a&gt;&amp;nbsp;and was soon good to go. Just one problem.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;blockquote&gt;
+&lt;br /&gt;&lt;p&gt;I didn&amp;#39;t know what to make.&lt;/p&gt;
+&lt;br /&gt;&lt;/blockquote&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;Almost magically a contest appeared out of nowhere. This was the &lt;a href=&quot;http://dogoodhackathon.devworx.in/&quot;&gt;Nokia DoGood Hackathon Delhi 2013&lt;/a&gt;. Their description pretty much nailed it.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;blockquote&gt;
+&lt;br /&gt;&lt;p&gt;Ever felt like you had a really good idea for an app that could change people&amp;rsquo;s lives and make the world a better place? Perhaps the only thing stopping you from taking action was you didn&amp;rsquo;t know where to start, or thought no one else would be interested? Well, hear that sound? That is opportunity knocking on your door.&lt;/p&gt;
+&lt;br /&gt;&lt;/blockquote&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;My dad suggested that I make an app on dental health. Interesting proposition. Anything related to dental health hardly induces excitement. I had to somehow make dental health&amp;nbsp;&lt;strong&gt;&lt;em&gt;fun.&amp;nbsp;&lt;/em&gt;&lt;/strong&gt;I thought about a few features an app like this could have, and came up with this list.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;ul&gt;
+&lt;br /&gt;	&lt;li&gt;dental score calculator:&amp;nbsp;find out if your teeth are older than you&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;dentist finder:&amp;nbsp;locate a nearby dentist on the map&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;A SMILE METER! :&amp;nbsp;rate your smile and share it with friends&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;important info about diseases:&amp;nbsp;find out more about common dental diseases&lt;/li&gt;
+&lt;br /&gt;&lt;/ul&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;I sent this list to the organizers and soon enough&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://i.imgur.com/1modzbY.png&quot; style=&quot;height:300px; width:180px&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;I kept on working and came up with this:&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://i.imgur.com/fAHuB8hl.jpg&quot; style=&quot;height:300px; width:180px&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;I put it in the jokes below quite late in the development period. A random joke comes up every time you open the app. They were hard to find. I list them all here.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;ul&gt;
+&lt;br /&gt;	&lt;li&gt;I see my dentist regularly! I see him at the post office, I see him at the market, I see him jogging...&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;&amp;quot;What filling would you like?&amp;quot; &amp;quot;Chocolate, please.&amp;quot;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;I&amp;#39;ve been to the dentist several times so I know the drill.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;What does the dentist of the year get?&amp;hellip;A little plaque&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;What did the dentist see at the North Pole?&amp;hellip;A molar bear&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Ten years without brushing causes horrible tooth decade.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Going to the dentist can be very full filling.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Ok now...we want the tooth, the whole tooth and nothing but the tooth.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Be true to your teeth and they won&amp;#39;t be false to you.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;I told my dentist my teeth are going yellow; he told me to wear a brown tie.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Smile. Sunshine is good for your teeth.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Smile. It lets your teeth breathe.&lt;/li&gt;
+&lt;br /&gt;&lt;/ul&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;The dental score calculator worked on a simple principle. You answered some multiple choice questions and a score was calculated based on your answers.&amp;nbsp;This was how the results from the&amp;nbsp;questionnaire looked:&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://i.imgur.com/KBv6EM9l.jpg&quot; style=&quot;height:300px; width:180px&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;Next up, was the dentist finder. Nothing fancy here, just searched Bing maps for the keyword &amp;quot;dental&amp;quot;. Could give &amp;nbsp;reasonable amount of results.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;The Smile Meter&amp;nbsp;&amp;trade;&amp;reg;&amp;copy; was the most magical part of my app. You took a selfie with your camera and it gave you a rating based on your smile. It worked. No, really, it did work!&amp;nbsp;For this to work, I had to employ an army of elves that &lt;q&gt;processed&lt;/q&gt; the images and gave a rating in real time. Just kidding. The image was actually uploaded to a server that used a proprietary complex facial detection and recognition algorithm to identify, classify and gave a rating to your smile. &lt;a href=&quot;https://rekognition.com/demo/face&quot;&gt;Not kidding this time.&lt;/a&gt;&amp;nbsp;This is how the results page evolved:&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://i.imgur.com/jUOkIy9l.jpg&quot; style=&quot;height:300px; width:180px&quot; /&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;img alt=&quot;&quot; src=&quot;http://i.imgur.com/rMRBd03l.jpg&quot; style=&quot;height:300px; width:180px&quot; /&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;img alt=&quot;&quot; src=&quot;http://i.imgur.com/B9e0lCtl.jpg&quot; style=&quot;height:300px; width:180px&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;Ofcourse you could share your image on Facebook, Twitter and whatnot.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;All that remained to be done was make a nice icon and a super stylish splash screen. Like this one:&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://i.imgur.com/rNUidjKl.jpg&quot; style=&quot;height:400px; width:240px&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;h2&gt;The Nokia DoGood Hackathon Delhi 2013&lt;/h2&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;And I was all set for the hackathon. You may be wondering why was this a hackathon if you could just make your app before you came. Yeah, well. That&amp;#39;s what the organizers called it. Doesn&amp;#39;t matter.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;The hackathon was at a hotel called&amp;nbsp;The Claremont in Gurgaon. Pretty nice hotel with a big lawn. I remember sleeping on the lawn at 4am because I had nothing better to do. Some photos of the event:&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://i.imgur.com/WJukDCal.jpg&quot; style=&quot;height:226px; width:400px&quot; /&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;img alt=&quot;&quot; src=&quot;http://i.imgur.com/DoQ5utIl.jpg&quot; style=&quot;height:226px; width:400px&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;Yes. That is a &lt;em&gt;&lt;strong&gt;Mac&lt;/strong&gt;&lt;/em&gt;. A guy had brought his Desktop Mac to an&amp;nbsp;event&amp;nbsp;for &lt;em&gt;&lt;strong&gt;Windows &lt;/strong&gt;&lt;/em&gt;Phone app development. Strange world.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;The hackathon started at around 2pm in the afternoon and ended at the same time the next day. We were supposed to code all day and night and give a presentation in front of a panel of judges the next day after breakfast. I was confident I was on top of this. I had my presentation ready, a clear and focused mind (despite the lack of sleep) and I was wearing my favourite shirt. Nothing could go wrong...&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;And well, nothing did. My presentation went without a hiccup. We were allotted 2 minutes, the panel actually extended my time. To demonstrate the smile meter, I actually jumped off stage and asked one of the judges to take a selfie and rate his smile. Thankfully, he got a&amp;nbsp;&lt;strong&gt;&lt;em&gt;solid 8.4 for his smile.&lt;/em&gt;&lt;/strong&gt;&amp;nbsp;That was a nice cherry on top of the pie.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;There were lots of interesting apps and ideas out there and I felt proud and honoured to be in such company. Finally it was time for results.&lt;a href=&quot;http://dogoodhackathon.devworx.in/result.php&quot;&gt; I was adjudged runners up and won a Lumia 820 :)&lt;/a&gt;&amp;nbsp;Sadly I wasn&amp;#39;t considered for AppCampus as my app couldn&amp;#39;t be made into a full scale startup and didn&amp;#39;t have much commercial potential.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;And yes, the food was pretty good.&lt;/p&gt;
+&lt;br /&gt;&lt;/p&gt;
+    &lt;/div&gt;
+</description>
+        <pubDate>Sat, 13 Dec 2014 16:20:41 +0530</pubDate>
+        <link>https://aneesh.xyz/blog/2014/dentro-and-my-experiences-in-the-nokia-dogood-hackathon/</link>
+        <guid isPermaLink="true">https://aneesh.xyz/blog/2014/dentro-and-my-experiences-in-the-nokia-dogood-hackathon/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>AnyBlog forked by Aneesh Introduction and Tutorial on how to set up a blog based on Parse</title>
+        <description>&lt;div class=&quot;content&quot;&gt;
+ &lt;h1&gt;Update 7th January 2019&lt;/h1&gt;
+ &lt;p&gt;This post has become super outdated now that Parse has shut down and there are better ways to host your blog on a custom domain free of cost. I have switched to a Github Pages + Jekyll based solution which is detailed here.&lt;p&gt;
+        &lt;p&gt;&lt;h2&gt;Quick Links&lt;/h2&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;ul&gt;
+&lt;br /&gt;	&lt;li&gt;&lt;a href=&quot;http://aneesh.parseapp.com/blog/&quot;&gt;Demo&lt;/a&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;&lt;a href=&quot;http://aneeshd16.github.io/AnyBlog-forked-by-Aneesh/&quot;&gt;GitHub Project Page&lt;/a&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;&lt;a href=&quot;https://github.com/aneeshd16/AnyBlog-forked-by-Aneesh&quot;&gt;Source on GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;br /&gt;&lt;/ul&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;When I made my first app with &lt;a href=&quot;http://parse.com/&quot;&gt;Parse.com&lt;/a&gt;, I was amazed by the number of services, functionality and most of all, the pricing. You get 30 req/s and 20GB of storage and bandwidth free of cost! How cool is that! What really captured my attention was that they provided hosting with a custom subdomain (subdomain.parseapp.com) &lt;em&gt;and&lt;/em&gt; an &lt;a href=&quot;http://expressjs.com/&quot;&gt;Express.js&lt;/a&gt; backend. To demonstrate this, they had an example called &lt;a href=&quot;http://www.anyblog.co/&quot;&gt;AnyBlog&lt;/a&gt; that served pretty good as an example, but not as an end-to-end blogging platform. I always wanted to write my own blog, but looking at this, I thought &amp;ldquo;Why not &lt;em&gt;make&lt;/em&gt; my own blog?&amp;rdquo; Driven by this singular thought and by my fascination for Parse, I set out to build a fully featured blogging platform based on Parse.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;h2&gt;Features:&lt;/h2&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;ul&gt;
+&lt;br /&gt;	&lt;li&gt;Proper urls for posts with &lt;strong&gt;url slugs.&lt;/strong&gt;
+&lt;br /&gt;
+&lt;br /&gt;	&lt;pre&gt;
+&lt;br /&gt;&lt;code class=&quot;language-xml&quot;&gt;/blog/this-is-the-post-title&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;	&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Post &lt;strong&gt;tags&lt;/strong&gt;. You can add as many tags you want to a post. You can also filter posts by tags.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Admin Panel wich allows &lt;strong&gt;viewing&lt;/strong&gt;, &lt;strong&gt;editing &lt;/strong&gt;and &lt;strong&gt;deleting &lt;/strong&gt;of posts.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Fully featured WYSIWYG post editor which supports HTML editing. Or you can just copy and paste from Word. Powered by &lt;a href=&quot;http://ckeditor.com/&quot;&gt;CKEditor&lt;/a&gt;&lt;img alt=&quot;&quot; src=&quot;http://i.imgur.com/v56BQ0f.png&quot; style=&quot;height:171px; width:682px&quot; /&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;&lt;strong&gt;Responsive layout&lt;/strong&gt; with Bootstrap&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;&lt;strong&gt;Comments&amp;nbsp;&lt;/strong&gt;support. Powered by disqus.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;&lt;strong&gt;Share buttons&amp;nbsp;&lt;/strong&gt;for social networks.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;&lt;strong&gt;No fuss setup&lt;/strong&gt;. No coding required. Need to modify only 1 file.&lt;/li&gt;
+&lt;br /&gt;&lt;/ul&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;hr /&gt;
+&lt;br /&gt;&lt;h2&gt;Tutorial&lt;/h2&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;ol&gt;
+&lt;br /&gt;	&lt;li&gt;Go to &lt;a href=&quot;http://parse.com&quot;&gt;Parse.com&lt;/a&gt;, sign up and create a new app.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Install the Parse command line tool.&amp;nbsp;The Parse command line tool for Windows is available &lt;a href=&quot;https://parse.com/downloads/windows/console/parse.zip&quot;&gt;here&lt;/a&gt;. After downloading the zip file and unzipping it, you can launch a parse-aware powershell session by double clicking ParseConsole.exe. After the first run of the ParseConsole, you can also start the powershell session by hitting Win + R and typing &amp;quot;parse&amp;quot;.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Download/Clone the git repo. If you haven&amp;#39;t used git before, just go &lt;a href=&quot;https://github.com/aneeshd16/AnyBlog-forked-by-Aneesh&quot;&gt;here&lt;/a&gt; and click on&amp;nbsp;&lt;strong&gt;Download ZIP&lt;/strong&gt;&amp;nbsp;on the right sidebar. Extract the zip to any directory of your choice. Your folder should look like this.&amp;nbsp;&lt;img alt=&quot;&quot; src=&quot;http://i.imgur.com/FrPYwSE.png&quot; style=&quot;height:215px; width:625px&quot; /&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Press &lt;kbd&gt;Shift + Right click&lt;/kbd&gt; and select &lt;kbd&gt;Open command window here&lt;/kbd&gt; to open a terminal window in that directory.&amp;nbsp;Type
+&lt;br /&gt;	&lt;pre&gt;
+&lt;br /&gt;&lt;code class=&quot;language-bash&quot;&gt;parse new .&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;	authenticate with your Parse credentials, and choose the app name you created.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Now, we&amp;#39;ll need to configure the url where you can reach your app. Go to your app&amp;#39;s setting page on Parse.com and set a unique subdomain for your Web Hosting url. The &lt;code&gt;subdomain.parseapp.com/&lt;/code&gt;&amp;nbsp;will be your &lt;var&gt;shareAddress&lt;/var&gt;. (For Step 7)&lt;img alt=&quot;&quot; src=&quot;http://i.imgur.com/OotnRug.png&quot; style=&quot;height:406px; width:669px&quot; /&gt;&lt;img alt=&quot;&quot; src=&quot;http://i.imgur.com/hpLHXmn.png&quot; style=&quot;height:120px; width:523px&quot; /&gt;&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Go to &lt;a href=&quot;https://disqus.com/admin/create/&quot;&gt;Disqus&lt;/a&gt; and create a new site profile. Choose an unique disqus url. If you choose myblog.disqus.com, then myblog is now your &lt;var&gt;disqus_shortname&lt;/var&gt;. (For Step 7)&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Edit &lt;code&gt;cloud/app.js&lt;/code&gt; and specify your &lt;var&gt;userDisplayName&lt;/var&gt;, &lt;var&gt;shareAddress&lt;/var&gt; and &lt;var&gt;disqus_shortname&lt;/var&gt;. Also edit the&lt;var&gt;username &lt;/var&gt;and &lt;var&gt;password &lt;/var&gt;for your blog.&amp;nbsp;
+&lt;br /&gt;	&lt;pre&gt;
+&lt;br /&gt;&lt;code class=&quot;language-javascript&quot;&gt;// We will use HTTP basic auth to protect some routes (e.g. adding a new blog post)
+&lt;br /&gt;var basicAuth = express.basicAuth('YOUR_USERNAME','YOUR_PASSWORD');
+&lt;br /&gt;
+&lt;br /&gt;// The information showed about the poster
+&lt;br /&gt;
+&lt;br /&gt;var userDisplayName = 'YOUR_NAME';
+&lt;br /&gt;var shareAddress='YOUR SUBDOMAIN.PARSEAPP.COM/';  //Make sure to add a '/' at the end
+&lt;br /&gt;var disqus_shortname='YOUR_DISQUS_NAME';	//Go to disqus.com to get an unique short name&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;	&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Type
+&lt;br /&gt;	&lt;pre&gt;
+&lt;br /&gt;&lt;code class=&quot;language-bash&quot;&gt;parse deploy&lt;/code&gt;&lt;/pre&gt;
+&lt;br /&gt;	in the Parse command shell. This deploys your app to Parse.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Go to &lt;code&gt;subdomain.parseapp.com/blog&lt;/code&gt; and view your copy of the blog.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;You will see a blank page. Go to to &lt;code&gt;subdomain.parseapp.com/blog/admin&lt;/code&gt; to create a new post.&lt;/li&gt;
+&lt;br /&gt;	&lt;li&gt;Enjoy Anyblog forked by Aneesh!&lt;/li&gt;
+&lt;br /&gt;&lt;/ol&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;hr /&gt;
+&lt;br /&gt;&lt;h2&gt;Notes&lt;/h2&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;p&gt;By default, the blog is located at &lt;code&gt;subdomain.parseapp.com/blog&lt;/code&gt; and not at &lt;code&gt;subdomain.parseapp.com&lt;/code&gt;. This allows you to have a static landing page which can point to the blog.&amp;nbsp;&lt;/p&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/p&gt;&lt;/div&gt;
+</description>
+        <pubDate>Fri, 12 Dec 2014 16:40:43 +0530</pubDate>
+        <link>https://aneesh.xyz/blog/2014/anyblog-forked-by-aneesh-introduction-and-tutorial-on-how-to-set-up-a-blog-based-on-parse/</link>
+        <guid isPermaLink="true">https://aneesh.xyz/blog/2014/anyblog-forked-by-aneesh-introduction-and-tutorial-on-how-to-set-up-a-blog-based-on-parse/</guid>
+        
+        <category>blog</category>
+        
+        <category>meta</category>
+        
+        <category>parse</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+  </channel>
+</rss>

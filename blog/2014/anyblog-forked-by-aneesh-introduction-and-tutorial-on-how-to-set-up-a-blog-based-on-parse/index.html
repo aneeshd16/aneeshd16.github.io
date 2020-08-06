@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>AnyBlog forked by Aneesh Introduction and Tutorial on how to set up a blog based on Parse</title>
+<meta name="description" content=" Update 7th January 2019 This post has become super outdated now that Parse has shut down and there are better ways to host your blog on a custom domain free...">
+
+<link rel="stylesheet" href="/css/main.css">
+<link rel="canonical" href="https://aneesh.xyz/blog/2014/anyblog-forked-by-aneesh-introduction-and-tutorial-on-how-to-set-up-a-blog-based-on-parse/">
+<link rel="alternate" type="application/rss+xml" title="Aneesh Devasthale" href="https://aneesh.xyz/feed.xml" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57612266-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</head>
+<body>
+  <header class="site-header">
+  <div class="container">
+    <input type="checkbox" id="toggleNavbar">
+    <h1 class="logo"><a href="/"></a></h1>
+    <label for="toggleNavbar" role="button" class="toggle-navbar-button">
+      <i class="icon icon-menu"></i>
+      <i class="icon icon-cross"></i>
+    </label>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/" title="Home">Home</a></li>
+        
+          <li><a href="/about" title="About">About</a></li>
+        
+          <li><a href="/talks" title="Talks">Talks</a></li>
+        
+          <li><a href="/blog" title="Blog">Blog</a></li>
+        
+        <li><a href="/feed.xml" target="_blank"><i class="icon icon-rss"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="main-container">
+  <div class="container">
+    <article role="article" class="post">
+
+  <div class="card">
+    <header class="post-header">
+      <h1 class="post-title">AnyBlog forked by Aneesh Introduction and Tutorial on how to set up a blog based on Parse</h1>
+      <em class="post-meta">
+        <time>Dec 12, 2014</time>
+      </em>
+    </header>
+
+    <div class="post-content">
+      
+      <div class="content">
+ <h1>Update 7th January 2019</h1>
+ <p>This post has become super outdated now that Parse has shut down and there are better ways to host your blog on a custom domain free of cost. I have switched to a Github Pages + Jekyll based solution which is detailed here.<p>
+        <p><h2>Quick Links</h2>
+<br />
+<br /><ul>
+<br />	<li><a href="http://aneesh.parseapp.com/blog/">Demo</a></li>
+<br />	<li><a href="http://aneeshd16.github.io/AnyBlog-forked-by-Aneesh/">GitHub Project Page</a></li>
+<br />	<li><a href="https://github.com/aneeshd16/AnyBlog-forked-by-Aneesh">Source on GitHub</a></li>
+<br /></ul>
+<br />
+<br /><h2>Introduction</h2>
+<br />
+<br /><p>When I made my first app with <a href="http://parse.com/">Parse.com</a>, I was amazed by the number of services, functionality and most of all, the pricing. You get 30 req/s and 20GB of storage and bandwidth free of cost! How cool is that! What really captured my attention was that they provided hosting with a custom subdomain (subdomain.parseapp.com) <em>and</em> an <a href="http://expressjs.com/">Express.js</a> backend. To demonstrate this, they had an example called <a href="http://www.anyblog.co/">AnyBlog</a> that served pretty good as an example, but not as an end-to-end blogging platform. I always wanted to write my own blog, but looking at this, I thought &ldquo;Why not <em>make</em> my own blog?&rdquo; Driven by this singular thought and by my fascination for Parse, I set out to build a fully featured blogging platform based on Parse.</p>
+<br />
+<br /><h2>Features:</h2>
+<br />
+<br /><ul>
+<br />	<li>Proper urls for posts with <strong>url slugs.</strong>
+<br />
+<br />	<pre>
+<br /><code class="language-xml">/blog/this-is-the-post-title</code></pre>
+<br />	</li>
+<br />	<li>Post <strong>tags</strong>. You can add as many tags you want to a post. You can also filter posts by tags.</li>
+<br />	<li>Admin Panel wich allows <strong>viewing</strong>, <strong>editing </strong>and <strong>deleting </strong>of posts.</li>
+<br />	<li>Fully featured WYSIWYG post editor which supports HTML editing. Or you can just copy and paste from Word. Powered by <a href="http://ckeditor.com/">CKEditor</a><img alt="" src="http://i.imgur.com/v56BQ0f.png" style="height:171px; width:682px" /></li>
+<br />	<li><strong>Responsive layout</strong> with Bootstrap</li>
+<br />	<li><strong>Comments&nbsp;</strong>support. Powered by disqus.</li>
+<br />	<li><strong>Share buttons&nbsp;</strong>for social networks.</li>
+<br />	<li><strong>No fuss setup</strong>. No coding required. Need to modify only 1 file.</li>
+<br /></ul>
+<br />
+<br /><hr />
+<br /><h2>Tutorial</h2>
+<br />
+<br /><ol>
+<br />	<li>Go to <a href="http://parse.com">Parse.com</a>, sign up and create a new app.</li>
+<br />	<li>Install the Parse command line tool.&nbsp;The Parse command line tool for Windows is available <a href="https://parse.com/downloads/windows/console/parse.zip">here</a>. After downloading the zip file and unzipping it, you can launch a parse-aware powershell session by double clicking ParseConsole.exe. After the first run of the ParseConsole, you can also start the powershell session by hitting Win + R and typing &quot;parse&quot;.</li>
+<br />	<li>Download/Clone the git repo. If you haven&#39;t used git before, just go <a href="https://github.com/aneeshd16/AnyBlog-forked-by-Aneesh">here</a> and click on&nbsp;<strong>Download ZIP</strong>&nbsp;on the right sidebar. Extract the zip to any directory of your choice. Your folder should look like this.&nbsp;<img alt="" src="http://i.imgur.com/FrPYwSE.png" style="height:215px; width:625px" /></li>
+<br />	<li>Press <kbd>Shift + Right click</kbd> and select <kbd>Open command window here</kbd> to open a terminal window in that directory.&nbsp;Type
+<br />	<pre>
+<br /><code class="language-bash">parse new .</code></pre>
+<br />	authenticate with your Parse credentials, and choose the app name you created.</li>
+<br />	<li>Now, we&#39;ll need to configure the url where you can reach your app. Go to your app&#39;s setting page on Parse.com and set a unique subdomain for your Web Hosting url. The <code>subdomain.parseapp.com/</code>&nbsp;will be your <var>shareAddress</var>. (For Step 7)<img alt="" src="http://i.imgur.com/OotnRug.png" style="height:406px; width:669px" /><img alt="" src="http://i.imgur.com/hpLHXmn.png" style="height:120px; width:523px" /></li>
+<br />	<li>Go to <a href="https://disqus.com/admin/create/">Disqus</a> and create a new site profile. Choose an unique disqus url. If you choose myblog.disqus.com, then myblog is now your <var>disqus_shortname</var>. (For Step 7)</li>
+<br />	<li>Edit <code>cloud/app.js</code> and specify your <var>userDisplayName</var>, <var>shareAddress</var> and <var>disqus_shortname</var>. Also edit the<var>username </var>and <var>password </var>for your blog.&nbsp;
+<br />	<pre>
+<br /><code class="language-javascript">// We will use HTTP basic auth to protect some routes (e.g. adding a new blog post)
+<br />var basicAuth = express.basicAuth('YOUR_USERNAME','YOUR_PASSWORD');
+<br />
+<br />// The information showed about the poster
+<br />
+<br />var userDisplayName = 'YOUR_NAME';
+<br />var shareAddress='YOUR SUBDOMAIN.PARSEAPP.COM/';  //Make sure to add a '/' at the end
+<br />var disqus_shortname='YOUR_DISQUS_NAME';	//Go to disqus.com to get an unique short name</code></pre>
+<br />	</li>
+<br />	<li>Type
+<br />	<pre>
+<br /><code class="language-bash">parse deploy</code></pre>
+<br />	in the Parse command shell. This deploys your app to Parse.</li>
+<br />	<li>Go to <code>subdomain.parseapp.com/blog</code> and view your copy of the blog.</li>
+<br />	<li>You will see a blank page. Go to to <code>subdomain.parseapp.com/blog/admin</code> to create a new post.</li>
+<br />	<li>Enjoy Anyblog forked by Aneesh!</li>
+<br /></ol>
+<br />
+<br /><hr />
+<br /><h2>Notes</h2>
+<br />
+<br /><p>By default, the blog is located at <code>subdomain.parseapp.com/blog</code> and not at <code>subdomain.parseapp.com</code>. This allows you to have a static landing page which can point to the blog.&nbsp;</p>
+<br /></p>
+</p></p></div>
+
+    </div>
+
+    
+<hr>
+
+<div id="disqus_thread"></div>
+<script>
+
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://aneesh-xyz.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+
+
+  </div>
+
+</article>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="social">
+  <li><a href="https://github.com/aneeshd16" target="_blank"><i class="icon icon-github"></i></a></li>
+  <li><a href="https://www.instagram.com/aneeshd16" target="_blank"><i class="icon icon-instagram"></i></a></li>
+  <li><a href="https://facebook.com/aneeshdevasthale" target="_blank"><i class="icon icon-facebook"></i></a></li>
+  <li><a href="https://linkedin.com/in/aneeshdevasthale" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+</ul>
+    <p class="txt-medium-gray">
+      <small>&copy;2020 All rights reserved. Made with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and ♥</small>
+    </p>
+  </div>
+</footer>
+
+
+</body>
+</html>
