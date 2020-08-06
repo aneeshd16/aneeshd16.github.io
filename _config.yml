@@ -60,3 +60,9 @@ navbar:
     title: Blog
 
 exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]
+
+defaults:
+  - scope:
+      path: files/*
+    values:
+      sitemap: false 

@@ -1,0 +1,21 @@
+function FindProxyForURL(url, host) {
+ 
+    var proxyserver = "192.168.0.100:8888";
+ 
+    var proxylist = new Array(
+        "wordpress.com",
+        "s1.wp.com",
+        "he.wordpress.com",
+        "es.wordpress.com",
+        "public-api.wordpress.com",
+    );
+ 
+    for( var i = 0; i < proxylist.length; i++ ) {
+        var value = proxylist[i];
+        if ( localHostOrDomainIs( host, value ) ) {
+            return "PROXY " + proxyserver;
+        }
+    }
+     
+    return "DIRECT";
+}
